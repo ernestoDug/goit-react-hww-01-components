@@ -22,7 +22,7 @@ const  {title,
       <span className="percentage">{stat.percentage}</span>
     </li>
                    </ul>
-         </section>)
+         </section>) 
 )}
     
   
