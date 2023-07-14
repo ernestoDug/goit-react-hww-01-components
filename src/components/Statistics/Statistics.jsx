@@ -1,41 +1,27 @@
 // компонент статистики
 const  Statistics = (props) => {
-
-   return props.stats.map((stat) => 
-    (    
+const { title, stats} = props;
+   return (
     <section 
-    key = {stat.id}
     className="statistics" 
-    
-    >
-  {/* <h2 className="title">{title}</h2> */}
+       >
+  <h2 className="title">{title}</h2>
+  <ul
+     className="stat-list">
+{/* спсиок так треба */}
+{stats.map(stat => (
+<li key={stat.id}
+className="item">
+<span className="label">{stat.label}</span>
+       <span className="percentage">{stat.percentage}</span>
+</li>)
+)}; 
+</ul>
 
-
-  <ul className="stat-list">
-           <li  
-
-           className="item"
-           >
-      <span className="label">{stat.label}</span>
-      <span className="percentage">{stat.percentage}</span>
-    </li>
-                   </ul>
-         </section>) 
-)}
-    
-  
+</section>)}
+                
+       
    
-
-
-
-    
-      // 
-      //   ( <li key = {stat.id} clasName="item">
-      //     <span className="label">{label}</span>
-      //     <span className="percentage">{percentage}</span>
-      //   </li>
-      //   ))}
-
 
 
       export default   Statistics
