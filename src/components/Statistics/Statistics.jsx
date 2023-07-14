@@ -1,8 +1,6 @@
 // компонент статистики
 const  Statistics = (props) => {
-const  {title,
-   stats: {percentage, label} 
-} = props;
+
    return props.stats.map((stat) => 
     (    
     <section 
