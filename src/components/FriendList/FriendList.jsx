@@ -1,24 +1,28 @@
-// компонент статистики
-const FriendList = props => {
-  const { friends } = props;
-  return (
+import PropTypes from "prop-types"
+
+import FriendListItem from "./FriendListItem";
+
+
+// компонент друзі
+const FriendList = (props) => {
+  const {friends} = props;
+        return (
     <ul className="friend-list">
-      {friends.map(friend => (
-        <FriendListItem key={friend.id} />
-      ))}
-    </ul>
+          <FriendListItem friends = {friends}  />
+  </ul>
+    
   );
+  
 };
 
-const FriendListItem = props => {
-  const { avatar, name, isOnline } = props;
-  return (
-    <li className="item">
-      <span className="status">{isOnline}</span>
-      <img className="avatar" src = {avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
-    </li>
-  );
-};
+  // прототайпи
+  FriendList.propTypes =  {
+    friends:  PropTypes.array,
+  }
+
+    
+
+
 
 export default FriendList;
+

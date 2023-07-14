@@ -1,6 +1,11 @@
+import PropTypes from "prop-types"
+
+
+
 // компонент статистики
 const  Statistics = (props) => {
 const { title, stats} = props;
+
    return (
     <section 
     className="statistics" 
@@ -15,12 +20,17 @@ className="item">
 <span className="label">{stat.label}</span>
        <span className="percentage">{stat.percentage}</span>
 </li>)
-)}; 
+)}
 </ul>
-
 </section>)}
                 
-       
+                
+        // прототайпи
+        Statistics.propTypes =  {
+         title: PropTypes.string,
+   stats:  PropTypes.array,
+ }
+
    
 
 
