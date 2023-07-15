@@ -32,7 +32,7 @@ const {username,
         <ul className={css.stats}>
           <li>
             <span className={css.label}>followers</span>
-            <span className={css.quantity} >{followers}</span>
+            <span className={css.quantity} >{followers}</span> 
           </li>
           <li>
             <span className={css.label}>views</span>
