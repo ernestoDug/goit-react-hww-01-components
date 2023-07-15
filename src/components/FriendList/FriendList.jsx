@@ -2,14 +2,13 @@ import PropTypes from "prop-types"
 
 import FriendListItem from "./FriendListItem/FriendListItem";
 
-import "./FriendList.css";
-
+import  css from "./FriendList.module.css";
 
 // компонент друзі
 const FriendList = (props) => {
   const {friends} = props;
         return (
-    <ul className="friend-list">
+    <ul className={css.friendList}>
           <FriendListItem friends = {friends}  />
   </ul>
     

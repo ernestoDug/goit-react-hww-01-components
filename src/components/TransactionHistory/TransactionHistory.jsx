@@ -1,12 +1,12 @@
 import PropTypes from "prop-types"
-
+import  css from "./TransactionHistory.module.css";
 
 
 const  TransactionHistory = (props) => {
     const { items } = props;
     
        return (
-        <table className="transaction-history">
+        <table className={css.transactionHistory}>
         <thead>
           <tr>
             <th>Type</th>
@@ -15,7 +15,6 @@ const  TransactionHistory = (props) => {
           </tr>
         </thead>
               <tbody>
-    {/* спсиок так треба */}
     {items.map(item => (
       <tr key={item.id}>
     <td>{item.type}</td>
