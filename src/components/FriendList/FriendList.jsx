@@ -6,7 +6,7 @@ import  css from "./FriendList.module.css";
 
 // компонент друзі
 const FriendList = (props) => {
-  const {friends} = props;
+  const { friends } = props;
         return (
     <ul className={css.friendList}>
           <FriendListItem friends = {friends}  />

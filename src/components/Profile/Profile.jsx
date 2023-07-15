@@ -22,8 +22,8 @@ const {username,
             className={css.avatar}
                      />
         </div>
-                     <div class={css.descr}> 
-          <p className={css.name} >{username}</p>
+                     <div className={css.descr}> 
+          <p className={css.name}> {username}</p>
           <p className={css.tag}>{tag}</p>
           <p className={css.location}>{location}</p>
           </div>

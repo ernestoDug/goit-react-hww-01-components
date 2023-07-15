@@ -1,4 +1,9 @@
 import PropTypes from "prop-types"
+
+// import clsx from "clsx";
+
+
+
 import css from  "./FriendListItem.module.css";
 
 const FriendListItem = (props) => {
@@ -8,7 +13,8 @@ const FriendListItem = (props) => {
         <li key={friend.id}
         className={css.itemFr}
               >
-<span className={css.status}>{friend.isOnline}d</span>
+                {/* <Alert isOnline ={friends.isOnline}/> */}
+<span className={css.status}>{friend.isOnline}-</span>
 <img className={css.avatar} src={friend.avatar} alt="User avatar" width="48" />
 <p 
 className={css.name}
@@ -25,10 +31,36 @@ className={css.name}
 
 
 
+    //  const Alert = ({ isOnline}) => {
+    //   return (
+    //     <span
+    //     className={clsx(
+    //       css.status,
+    //       {isOnline},
+    //        false && css.statusOff,
+    //       true && css.statusOn
+    //     )}
+    //     >
+     
+    //     </span>
+    //   );
+    // };
+    
+    
+// const Alert = ({isOnline} ) => {
+//   const classNames = [css.status, isOnline];
+//   if (isOnline === true) classNames.push(css.statusOn);
+//   if (isOnline !== true) classNames.push(css.statusOff);
+//   console.log(isOnline)
+//   return <span className={classNames.join(" ")}></span>;
+// };
+
+
+    
+
     export default FriendListItem
       
 
     
 
 
-// *******************************
