@@ -1,5 +1,7 @@
 import PropTypes from "prop-types"
 
+import "./Profile.css";
+
 
 // компонент профіля
 export default function Profile(props) {
@@ -17,11 +19,15 @@ const {username,
           <img
             src={avatar}
             alt="User avatar"
+            className="avatar"
                      />
+        </div>
+                     <div class="descr"> 
           <p className="name" >{username}</p>
           <p className="tag">{tag}</p>
           <p className="location">{location}</p>
-        </div>
+          </div>
+
       
         <ul className="stats">
           <li>
