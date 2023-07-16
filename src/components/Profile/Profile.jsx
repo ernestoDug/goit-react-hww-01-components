@@ -57,17 +57,3 @@ const {username,
 
 
 
-
-// 
-// 
-// 
-// 
-// 
-// 
-// className="quantity"
-// className="label"
-// 
-// className="label"
-// className="quantity"
-
-  //  console.log("fdfd");

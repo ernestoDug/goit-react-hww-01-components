@@ -1,8 +1,6 @@
 // import ReactDOM from 'react-dom/client';
 import React from 'react';
 
-
-
 // кОмпО
 import Profile from 'components/Profile/Profile';
 import Statistics from 'components/Statistics/Statistics';

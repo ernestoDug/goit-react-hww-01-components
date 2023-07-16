@@ -1,32 +1,32 @@
 [
     {
-      "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
-      "name": "Mango",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNlN4Ahn735g6zNcHpEx_V39p92D2EHGKOw&usqp=CAU",
+      "name": "Віл Тернер",
       "isOnline": true,
       "id": 1812
     },
     {
-      "avatar": "https://cdn-icons-png.flaticon.com/512/616/616438.png",
-      "name": "Kiwi",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtBVQni5mbE3O17bqzzE6ROvk_gd4-Kg_wA&usqp=CAU",
+      "name": "Барбоса",
       "isOnline": false,
       "id": 1137
     },
     {
-      "avatar": "https://cdn-icons-png.flaticon.com/512/1623/1623681.png",
-      "name": "Ajax",
+      "avatar": "https://chakiris.club/uploads/posts/2022-11/thumbs/1668872238_chakiris-club-p-chudovishche-iz-piratov-karibskogo-morya-k-1.jpg",
+      "name": "Дейві Джоунс",
       "isOnline": true,
       "id": 1213
     },
     {
-      "avatar": "https://cdn-icons-png.flaticon.com/512/2977/2977285.png",
-      "name": "Jay",
-      "isOnline": true,
+      "avatar": "https://upload.wikimedia.org/wikipedia/ru/1/1e/Bill-Turner-pirates-of-the-caribbean.jpg",
+      "name": "Прихлоп Біл Тернер",
+      "isOnline": false,
       "id": 1714
     },
     {
-      "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998749.png",
-      "name": "Poly",
-      "isOnline": false,
+      "avatar": "https://uhd.name/uploads/posts/2020-09/1601027989_34-p-elizabet-suonn-113.jpg",
+      "name": "Елізабет Суон",
+      "isOnline": true,
       "id": 1284
     }
   ]
