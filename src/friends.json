@@ -8,13 +8,13 @@
     {
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtBVQni5mbE3O17bqzzE6ROvk_gd4-Kg_wA&usqp=CAU",
       "name": "Барбоса",
-      "isOnline": false,
+      "isOnline": true,
       "id": 1137
     },
     {
       "avatar": "https://chakiris.club/uploads/posts/2022-11/thumbs/1668872238_chakiris-club-p-chudovishche-iz-piratov-karibskogo-morya-k-1.jpg",
       "name": "Дейві Джоунс",
-      "isOnline": true,
+      "isOnline": false,
       "id": 1213
     },
     {
