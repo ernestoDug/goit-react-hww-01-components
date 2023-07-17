@@ -1,5 +1,9 @@
 import PropTypes from "prop-types"
+
 import  css from "./TransactionHistory.module.css";
+
+// import exact from 'prop-types-exact';
+// // npm i prop-types-exact
 
 
 const  TransactionHistory = (props) => {
@@ -26,10 +30,17 @@ const  TransactionHistory = (props) => {
     }
 
       // прототайпи
-      TransactionHistory.propTypes =  {
-        items:  PropTypes.array,
-  }
-
+ 
+  TransactionHistory.propTypes =  {
+    TransactionHistory:  PropTypes.arrayOf (
+      PropTypes.exact({
+        id:  PropTypes.string,
+        type: PropTypes.string,
+        amount: PropTypes.number,
+        currency: PropTypes.string,
+      })
+    )
+ }
 
 
 

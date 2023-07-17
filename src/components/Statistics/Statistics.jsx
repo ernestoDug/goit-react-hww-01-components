@@ -30,7 +30,8 @@ className={css.item}>
          title: PropTypes.string,
    stats:  PropTypes.array,
  }
-
+ 
+   
    
 
 

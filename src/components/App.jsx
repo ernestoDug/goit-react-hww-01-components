@@ -1,4 +1,7 @@
 // import ReactDOM from 'react-dom/client';
+// npm install prop-types;
+
+
 import React from 'react';
 
 // кОмпО
@@ -14,10 +17,6 @@ import data from 'data.json';
 import friends from 'friends.json';
 import  transactions from 'transactions.json';
 
-
-
-
-// npm install prop-types
 
 
 
