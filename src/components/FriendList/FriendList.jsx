@@ -13,10 +13,16 @@ const FriendList = props => {
   const { friends } = props;
   return (
     <ul className={css.friendList}>
-      <FriendListItem friends={friends} 
-      
-      
-      />
+      {friends.map(({ isOnline, avatar, name, id }) => {
+        return (
+          <FriendListItem
+            isOnline={isOnline}
+            avatar={avatar}
+            name={name}
+            key={id}
+          />
+        );
+      })}
     </ul>
   );
 };
@@ -25,10 +31,10 @@ const FriendList = props => {
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.exact({
-      avatar: PropTypes.string,
-      name: PropTypes.string,
-      isOnline: PropTypes.bool,
-      id: PropTypes.number,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
     })
   ),
 };

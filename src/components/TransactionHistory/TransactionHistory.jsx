@@ -19,11 +19,11 @@ const TransactionHistory = props => {
         </tr>
       </thead>
       <tbody>
-        {items.map(item => (
-          <tr key={item.id}>
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+        {items.map(({ id, type, amount, currency }) => (
+          <tr key={id}>
+            <td>{type}</td>
+            <td>{amount}</td>
+            <td>{currency}</td>
           </tr>
         ))}
       </tbody>
@@ -36,10 +36,10 @@ const TransactionHistory = props => {
 TransactionHistory.propTypes = {
   TransactionHistory: PropTypes.arrayOf(
     PropTypes.exact({
-      id: PropTypes.string,
-      type: PropTypes.string,
-      amount: PropTypes.number,
-      currency: PropTypes.string,
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired,
     })
   ),
 };
